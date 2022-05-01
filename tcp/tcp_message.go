@@ -95,7 +95,8 @@ func (m *Message) UUID() []byte {
 
 	uuidHex := make([]byte, 24)
 	hex.Encode(uuidHex[:], id[:])
-
+	fmt.Printf("first packet %+v ", pckt)
+	fmt.Printf("uuid  ", uuidHex)
 	return uuidHex
 }
 

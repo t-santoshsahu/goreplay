@@ -208,7 +208,7 @@ func (pckt *Packet) parse(data []byte, lType, lTypeLen int, cp *gopacket.Capture
 	pckt.Lost = uint32(cp.Length - cp.CaptureLength)
 
 	pckt.Payload = ndata[dOf:]
-
+    fmt.Printf("+%+v packet ", pckt)
 	return nil
 }
 
